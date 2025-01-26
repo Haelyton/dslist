@@ -3,6 +3,7 @@ package com.devsuperior.dslist.entities;
 import jakarta.persistence.*;
 
 import java.util.Objects;
+import java.util.Random;
 
 @Entity
 @Table(name = "tb_game")
@@ -38,6 +39,7 @@ public class Game {
 
     public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl, String shortDescription, String longDescription) {
         this.id = id;
+
         this.title = title;
         this.year = year;
         this.genre = genre;
